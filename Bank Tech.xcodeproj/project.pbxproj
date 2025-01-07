@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E40D32B72D2D786B004E9BD2 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40D32B62D2D786B004E9BD2 /* SplashView.swift */; };
 		E456F5BE2D0DA62C0058F6F0 /* Bank_TechApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E456F5BD2D0DA62C0058F6F0 /* Bank_TechApp.swift */; };
 		E456F5C22D0DA62E0058F6F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E456F5C12D0DA62E0058F6F0 /* Assets.xcassets */; };
 		E456F5C62D0DA62E0058F6F0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E456F5C52D0DA62E0058F6F0 /* Preview Assets.xcassets */; };
@@ -44,6 +45,7 @@
 
 /* Begin PBXFileReference section */
 		E40D32B12D2D6B4A004E9BD2 /* Bank_Tech.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Bank_Tech.entitlements; sourceTree = "<group>"; };
+		E40D32B62D2D786B004E9BD2 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		E456F5BA2D0DA62C0058F6F0 /* Bank Tech.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bank Tech.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E456F5BD2D0DA62C0058F6F0 /* Bank_TechApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bank_TechApp.swift; sourceTree = "<group>"; };
 		E456F5C12D0DA62E0058F6F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -96,6 +98,14 @@
 				E456F5BD2D0DA62C0058F6F0 /* Bank_TechApp.swift */,
 			);
 			path = Root;
+			sourceTree = "<group>";
+		};
+		E40D32B52D2D784C004E9BD2 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				E40D32B62D2D786B004E9BD2 /* SplashView.swift */,
+			);
+			path = Splash;
 			sourceTree = "<group>";
 		};
 		E456F5B12D0DA62C0058F6F0 = {
@@ -188,6 +198,7 @@
 		E456F5EB2D0DAA5E0058F6F0 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				E40D32B52D2D784C004E9BD2 /* Splash */,
 				E456F5F02D0DAE9B0058F6F0 /* Main */,
 			);
 			path = Scenes;
@@ -411,6 +422,7 @@
 				E456F5FF2D0EC3E80058F6F0 /* CarouselView.swift in Sources */,
 				E456F5BE2D0DA62C0058F6F0 /* Bank_TechApp.swift in Sources */,
 				E456F5FD2D0EC3B20058F6F0 /* ListView.swift in Sources */,
+				E40D32B72D2D786B004E9BD2 /* SplashView.swift in Sources */,
 				E456F60C2D0EE7E90058F6F0 /* CalculateSafeInset.swift in Sources */,
 				E456F5F72D0DAF440058F6F0 /* MainView.swift in Sources */,
 				E456F6032D0EC7500058F6F0 /* DataProvider.swift in Sources */,
