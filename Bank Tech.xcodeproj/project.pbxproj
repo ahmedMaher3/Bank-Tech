@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		E456F5BE2D0DA62C0058F6F0 /* Bank_TechApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E456F5BD2D0DA62C0058F6F0 /* Bank_TechApp.swift */; };
-		E456F5C02D0DA62C0058F6F0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E456F5BF2D0DA62C0058F6F0 /* ContentView.swift */; };
 		E456F5C22D0DA62E0058F6F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E456F5C12D0DA62E0058F6F0 /* Assets.xcassets */; };
 		E456F5C62D0DA62E0058F6F0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E456F5C52D0DA62E0058F6F0 /* Preview Assets.xcassets */; };
 		E456F5D02D0DA62F0058F6F0 /* Bank_TechTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E456F5CF2D0DA62F0058F6F0 /* Bank_TechTests.swift */; };
@@ -46,7 +45,6 @@
 /* Begin PBXFileReference section */
 		E456F5BA2D0DA62C0058F6F0 /* Bank Tech.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bank Tech.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E456F5BD2D0DA62C0058F6F0 /* Bank_TechApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bank_TechApp.swift; sourceTree = "<group>"; };
-		E456F5BF2D0DA62C0058F6F0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E456F5C12D0DA62E0058F6F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E456F5C32D0DA62E0058F6F0 /* Bank_Tech.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Bank_Tech.entitlements; sourceTree = "<group>"; };
 		E456F5C52D0DA62E0058F6F0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -120,7 +118,6 @@
 				E456F5E92D0DAA090058F6F0 /* Presentation */,
 				E456F5EA2D0DAA110058F6F0 /* Data */,
 				E456F5BD2D0DA62C0058F6F0 /* Bank_TechApp.swift */,
-				E456F5BF2D0DA62C0058F6F0 /* ContentView.swift */,
 				E456F5C12D0DA62E0058F6F0 /* Assets.xcassets */,
 				E456F5C32D0DA62E0058F6F0 /* Bank_Tech.entitlements */,
 				E456F5C42D0DA62E0058F6F0 /* Preview Content */,
@@ -402,7 +399,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E456F5EF2D0DAE490058F6F0 /* ListDTO.swift in Sources */,
-				E456F5C02D0DA62C0058F6F0 /* ContentView.swift in Sources */,
 				E456F6072D0EC7940058F6F0 /* MainRepoImplmentation.swift in Sources */,
 				E456F5FF2D0EC3E80058F6F0 /* CarouselView.swift in Sources */,
 				E456F5BE2D0DA62C0058F6F0 /* Bank_TechApp.swift in Sources */,
