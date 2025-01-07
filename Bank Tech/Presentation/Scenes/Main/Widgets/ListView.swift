@@ -8,11 +8,22 @@
 import SwiftUI
 
 struct ListView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
+    let items: [ListDTO]
+    let horizontalPadding: CGFloat
 
-#Preview {
-    ListView()
+    var body: some View {
+        LazyVStack(alignment: .leading, spacing: 20) {
+            ForEach(items) { item in
+                HStack {
+                    Image(item.imageName)
+                        .resizable()
+                        .frame(width: 50, height: 50)
+                        .clipShape(Circle())
+                    Text(item.title)
+                        .font(.headline)
+                }
+                .padding(.horizontal, horizontalPadding)
+            }
+        }
+    }
 }

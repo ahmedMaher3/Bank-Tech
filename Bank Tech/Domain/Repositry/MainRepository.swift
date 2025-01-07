@@ -6,7 +6,7 @@
 //
 
 import Foundation
-protocol MainRepo {
+protocol MainRepository {
     func getCarouselImages() -> [String]
     func getListItems() -> [ListDTO]
 }

@@ -7,12 +7,21 @@
 
 import SwiftUI
 
-struct CoussView: View {
+struct CarouselView: View {
+    let images: [String]
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        TabView {
+            ForEach(images, id: \.self) { image in
+                Image(image)
+                    .resizable()
+                    .cornerRadius(10)
+                    .padding(.horizontal, 8)
+            }
+        }
+        .tabViewStyle(PageTabViewStyle(indexDisplayMode: .automatic))
+        .frame(height: 200)
     }
 }
 
-#Preview {
-    CoussView()
-}
+

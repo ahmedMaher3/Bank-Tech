@@ -6,13 +6,17 @@
 //
 
 import Foundation
+import SwiftUI
 
-/// Helper to get the top safe area inset
-private func getSafeAreaTopInset() -> CGFloat {
-    UIApplication.shared.connectedScenes
-        .compactMap { $0 as? UIWindowScene }
-        .first?
-        .windows
-        .first(where: { $0.isKeyWindow })?
-        .safeAreaInsets.top ?? 0
+class CalculateSafeInset {
+
+    static func getSafeAreaTopInset() -> CGFloat {
+        UIApplication.shared.connectedScenes
+            .compactMap { $0 as? UIWindowScene }
+            .first?
+            .windows
+            .first(where: { $0.isKeyWindow })?
+            .safeAreaInsets.top ?? 0
+    }
 }
+

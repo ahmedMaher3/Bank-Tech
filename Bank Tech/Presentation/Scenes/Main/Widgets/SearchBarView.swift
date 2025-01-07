@@ -7,12 +7,39 @@
 
 import SwiftUI
 
-struct SearchBarView: View {
+struct SearchBarContainer: View {
+    @Binding var searchText: String
+    @Binding var isPinned: Bool
+
+    let horizontalPadding: CGFloat
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        GeometryReader { geometry in
+            SearchBar(text: $searchText)
+                .frame(height: 60)
+                .padding(.horizontal, horizontalPadding)
+                .background(.white)
+                .onChange(of: geometry.frame(in: .global).minY) { oldValue, newValue  in
+                  //  if searchText.isEmpty {
+                        isPinned = newValue <= CalculateSafeInset.getSafeAreaTopInset()
+                   // }
+                }
+        }
+        .frame(height: 60)
+
     }
 }
 
-#Preview {
-    SearchBarView()
+struct SearchBar: View {
+    @Binding var text: String
+
+    var body: some View {
+        HStack {
+            TextField("Search...", text: $text)
+                .padding( 10)
+                .background(Color(.systemGray6))
+                .cornerRadius(10)
+        }
+        .padding(.vertical)
+    }
 }
